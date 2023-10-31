@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #ADD8E6;
+}
+
+main{
+    max-width: 1000px;
+    padding: 20px;
+    margin-inline: auto;
+}
+
+.contact-header{
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-bottom: 2px solid #9BC2CF;
+}
+
+.address_wrapper{
+    padding: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 18px;
+}
+
+.address_container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.address_container > *,
+.contact_wrapper > *{
+    flex: 1;
+}
+
+.contactlinks > span{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.phone-link{
+    color: #DC3545;
+}
+
+.email-link{
+    color: #17A2B8;
+    margin-top: 10px;
+}
+
+.location{
+    text-align: center;
+    font-size: 30px;
+    color: #DC3545;
+}
+
+.contact_wrapper{
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    gap: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+form  input,
+form textarea{
+    font-size: 16px;
+    padding: 12px 10px;
+    border-radius: 5px;
+    border: 1px solid #CED4DA;
+}
+
+form textarea{
+    width: 100%;
+    resize: none;
+}
+
+.contact-row{
+    width: 100%;
+    display: flex;
+    gap: 18px;
+}
+
+.send_btn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    outline-offset: 2px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #DC3545;
+    color: white;
+}
+
+.send_btn:focus{
+    outline: 2px solid #DC3545;
+}
+
+.map{
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.social_links{
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.social_links > span{
+    display: inline-flex;
+    width: 40px;
+    aspect-ratio: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-radius: 3px;
+}
+
+.facebook-icon{
+    background-color: #3A5A99;
+    color: white;
+}
+
+.twitter-icon{
+    background-color: #39CBFA;
+    color: white;
+}
+
+.linkdin-icon{
+    background-color: #3D99C0;
+    color: white;
+}
+
+.github-icon{
+    background-color: #000000;
+    color: white;
+}
