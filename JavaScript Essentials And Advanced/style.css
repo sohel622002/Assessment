@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap");
+
+:root {
+  --clr-black: #212724;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+input,
+select {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid var(--clr-black);
+}
+
+.main-section {
+  min-height: 80vh;
+  color: #212724;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking-wrapper {
+  /* border: 1px solid var(--clr-black); */
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+}
+
+.booking-wrapper h1 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.booking-wrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.no-person,
+.date-wrapper,
+.time-wrapper,
+.slot-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.no-person > label,
+.date-wrapper > label,
+.time-wrapper > label,
+.slot-wrapper > label {
+  flex: 1;
+  flex-basis: 150px;
+  padding: 10px 20px;
+}
+
+.no-person > input,
+.date-wrapper > input,
+.time-wrapper > select,
+.slot-wrapper > select {
+  flex: 1;
+  flex-basis: 160px;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.input-row > * {
+  flex: 1;
+}
+
+.book-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none;
+  background-color: #4bb543;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.error-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.error {
+  position: sticky;
+  top: 0;
+  align-self: center;
+  width: 100%;
+  max-width: 350px;
+  font-weight: 600;
+  padding: 10px 20px;
+  color: white;
+}
+
+.error.danger {
+  background-color: rgb(220, 53, 69);
+}
+
+.error.success {
+  background-color: rgb(25, 135, 84);
+}
