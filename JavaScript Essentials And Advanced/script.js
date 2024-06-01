@@ -22,12 +22,12 @@ form.addEventListener("submit", (e) => {
     if (!data.get("Slot")) return showError("danger", "Please Select Slot !");
   }
   if (bookingSelector.value == "Hourly booking") {
-    if (!data.get("time-select")) return showError("danger", "Please Select Time Slot !");
+    if (!data.get("time-select"))
+      return showError("danger", "Please Select Time Slot !");
   }
   clearInterval(interval);
   const entries = Object.fromEntries(data.entries());
-  console.table(entries);
-  showError("success", "Booked Successfull !")
+  showError("success", "Booked Successfull !");
   form.reset();
 });
 
